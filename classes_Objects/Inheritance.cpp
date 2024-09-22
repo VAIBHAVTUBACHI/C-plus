@@ -5,6 +5,7 @@ using namespace std;
 class teacher{
     public:
     int roll_no;
+    // default constructor of parent
     teacher()
     {
          cout<<" i am parent constructor";
@@ -21,6 +22,11 @@ class teacher{
 class student : public teacher{
     public:
     float cgpa;
+    //default constructor of child
+    student()
+    {
+        cout<<" i am child constructor";
+    }
     student(float cgpa)
     {
         this->cgpa=cgpa;
